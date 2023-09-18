@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danie\\.nuget\\packages\\": {}
+    "C:\\Users\\julia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danie\\Desktop\\Api_Proyecto\\MyProject.csproj",
+      "projectUniqueName": "C:\\Users\\julia\\OneDrive\\Documentos\\GitHub\\Proyecto-integrado1\\MyProject.csproj",
       "projectName": "MyProject",
-      "projectPath": "C:\\Users\\danie\\Desktop\\Api_Proyecto\\MyProject.csproj",
-      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danie\\Desktop\\Api_Proyecto\\obj\\",
+      "projectPath": "C:\\Users\\julia\\OneDrive\\Documentos\\GitHub\\Proyecto-integrado1\\MyProject.csproj",
+      "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\julia\\OneDrive\\Documentos\\GitHub\\Proyecto-integrado1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
