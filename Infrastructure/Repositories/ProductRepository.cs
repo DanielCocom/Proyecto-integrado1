@@ -28,14 +28,14 @@ namespace MyProject.Infrastructure.Repositories
 
         private List<Producto> LoadData()
         {
-            var products = new List<Producto>();
-            if (File.Exists(_filePath))
+            var products = GetCurrentFilePath();
+            if (File.Exists(products))
             {
-                var json = File.ReadAllText(_filePath);
-                products = JsonSerializer.Deserialize<List<Producto>>(json);
+                var json = File.ReadAllText(products);
+                return JsonSerializer.Deserialize<List<Producto>>(json)!;
             }
 
-            return new List<Producto>();
+            return  new List<Producto>();
         }
 
         public IEnumerable<Producto> GetAll()
@@ -47,9 +47,7 @@ namespace MyProject.Infrastructure.Repositories
         {
             return _products.FirstOrDefault(x => x.Codigo == id)
             ?? new Producto{
-                Codigo = 0,
-                Nombre = "No existe",
-                Precio = 0
+                Nombre = string.Empty
             };
         }
 

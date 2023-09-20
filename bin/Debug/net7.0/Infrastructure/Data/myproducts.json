@@ -1,14 +1,14 @@
 [
     {
         "Codigo": 1,
-        "Name": "Truffle Cups - Brown",
+        "Nombre": "Truffle Cups - Brown",
         "Precio": 10
     },
     {
         "Codigo": 2,
-        "Name": "Soup Campbells - Italian Wedding",
+        "Nombre": "Soup Campbells - Italian Wedding",
         "Precio": 75
-    },
+    }
     {
         "Codigo": 3,
         "Name": "Sachet",

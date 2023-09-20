@@ -1,14 +1,8 @@
-using System;
+using Microsoft.AspNetCore.OpenApi;
 using MyProject.Services.Features.Productos;
 
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+
 using MyProject.Infrastructure.Repositories;
-
-
-
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 
