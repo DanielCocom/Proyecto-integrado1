@@ -5,6 +5,8 @@ using MyProject.Services.Features.CaSer;
 
 using MyProject.Infrastructure.Repositories;
 using MyProject.Infrastructure.Repositories.c;
+using static MyProject.Services.Features.Cliente.ClienteService;
+using MyProject.Services.Features.Cliente;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +14,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ProductoServices>();
 builder.Services.AddScoped<CarritoServices>();
 
+builder.Services.AddScoped<ClienteService>();
 builder.Services.AddTransient<ProductRepository>();
 builder.Services.AddTransient<CarritoRepositorie>();
+
+builder.Services.AddTransient<ClienteInfoRepository>();
+builder.Services.AddTransient<ClienteService>();
 
 
 builder.Services.AddSingleton<ProductoServices>();
