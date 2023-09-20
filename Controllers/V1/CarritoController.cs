@@ -5,67 +5,69 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyProject.Domain.Entities;
 using MyProject.Services.Features.Productos;
+using MyProject.Services.Features.CaSer;
+
+using MyProject.Infrastructure.Repositories.c;
 
 namespace Proyecto_webApi.Controllers.V1
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CartController : ControllerBase
+    public class CarritoController : ControllerBase
     {
-        private List<Carrito> carritos = new List<Carrito>();
-        private readonly ProductoServices? _productoServices;
-        public CartController(ProductoServices productoServices)
+        
+       private readonly CarritoServices _carritoServices;
+        private readonly ProductoServices _productoServices;
+
+        public CarritoController(CarritoServices carritoServices, ProductoServices productoServices)
         {
+            _carritoServices = carritoServices;
             _productoServices = productoServices;
-        }// Lista para almacenar carritos
-
-        [HttpPost("AgregarAlCarrito/{carritoId}")]
-        public IActionResult AgregarAlCarrito(int carritoId, int codigoProducto)
-        {
-
-            if (_productoServices == null)
-            {
-                return BadRequest("El servicio no esta disponible");
-
-            }
-            var carrito = carritos.FirstOrDefault(c => c.Codigo == carritoId);
-            if (carrito == null)
-            {
-                carrito = new Carrito { Codigo = carritoId };
-                carritos.Add(carrito);
-            }
-
-            var producto = _productoServices.GetById(codigoProducto);
-            if (producto == null)
-            {
-                return NotFound();
-            }
-
-            carrito.AgregarProducto(producto); // Agregar producto al carrito
-            return Ok();
         }
 
-        [HttpGet("MostrarCarrito/{carritoId}")]
-        public IActionResult MostrarCarrito(int carritoId)
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
         {
-            var carrito = carritos.FirstOrDefault(c => c.Codigo == carritoId);
+            var carrito = _carritoServices.GetCarritoById(id);
             if (carrito == null)
             {
                 return NotFound();
             }
+            return Ok(carrito);
+        }
 
-            // Obtener productos del carrito
-            var productosEnCarrito = carrito.ObtenerProductos();
+        [HttpPost]
+        public IActionResult Post(Carrito carrito)
+        {
+            _carritoServices.AddCarrito(carrito);
+            return CreatedAtAction(nameof(Get), new { id = carrito.Codigo }, carrito);
+        }
 
-            // **Aquí es donde se resuelven los problemas:**
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var carrito = _carritoServices.GetCarritoById(id);
+            if (carrito == null)
+            {
+                return NotFound();
+            }
+            _carritoServices.DeleteCarrito(id);
+            return NoContent();
+        }
+             [HttpPost("{carritoId}/agregarproducto/{productoId}")]
+        public IActionResult AgregarProducto(int carritoId, int productoId)
+        {
+            var carrito = _carritoServices.GetCarritoById(carritoId);
+            var producto = _productoServices.GetById(productoId);
 
-            // **El primer problema es que la propiedad `Nombre` de la entidad `Producto` no es obligatoria. Para resolver este problema, se agrega la anotación `Required` a la propiedad `Nombre`.**
+            if (carrito == null || producto == null)
+            {
+                return NotFound();
+            }
 
-            productosEnCarrito.Where(p => p.Nombre != null).ToList();
-
-            // **El segundo problema es que el tipo de retorno del método `MostrarCarrito()` es `IActionResult`. Para resolver este problema, se modifica el tipo de retorno a `IEnumerable<Producto>`.**
-
-            return Ok(productosEnCarrito); // Mostrar los productos en el carrito con código y nombre
+            _carritoServices.AgregarProductoACarrito(carritoId, producto);
+            return Ok(carrito);
         }
     }
-}
+    }
+

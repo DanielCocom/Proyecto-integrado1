@@ -1,14 +1,20 @@
 using Microsoft.AspNetCore.OpenApi;
 using MyProject.Services.Features.Productos;
+using MyProject.Services.Features.CaSer;
 
 
 using MyProject.Infrastructure.Repositories;
+using MyProject.Infrastructure.Repositories.c;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ProductoServices>();
+builder.Services.AddScoped<CarritoServices>();
+
 builder.Services.AddTransient<ProductRepository>();
+builder.Services.AddTransient<CarritoRepositorie>();
+
 
 builder.Services.AddSingleton<ProductoServices>();
 builder.Services.AddControllers();

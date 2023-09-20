@@ -1,8 +1,8 @@
 [
     {
         "Codigo": 1,
-        "Nombre": "Truffle Cups - Brown",
-        "Precio": 10
+        "Nombre": "awa de uwu",
+        "Precio": 12
     },
     {
         "Codigo": 2,
@@ -11,42 +11,42 @@
     },
     {
         "Codigo": 3,
-        "Name": "Sachet",
+        "Nombre": "Sabras",
         "Precio": 94
     },
     {
         "Codigo": 4,
-        "Name": "Sole - Iqf",
+        "Nombre": "Jabon uwu",
         "Precio": 26
     },
     {
         "Codigo": 5,
-        "Name": "Syrup - Monin - Granny Smith",
+        "Nombre": null,
         "Precio": 82
     },
     {
         "Codigo": 6,
-        "Name": "Coffee - 10oz Cup 92961",
+        "Nombre": null,
         "Precio": 68
     },
     {
         "Codigo": 7,
-        "Name": "Beans - Soya Bean",
+        "Nombre": null,
         "Precio": 81
     },
     {
         "Codigo": 8,
-        "Name": "Sprouts - Brussel",
+        "Nombre": null,
         "Precio": 20
     },
     {
         "Codigo": 9,
-        "Name": "Cake - Box Window 10x10x2.5",
+        "Nombre": null,
         "Precio": 40
     },
     {
         "Codigo": 10,
-        "Name": "Parasol Pick Stir Stick",
+        "Nombre": null,
         "Precio": 20
     }
 ]
