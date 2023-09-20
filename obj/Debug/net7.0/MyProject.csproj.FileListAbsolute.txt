@@ -196,3 +196,4 @@ C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\obj\Debug\net7.0\r
 C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\obj\Debug\net7.0\MyProject.pdb
 C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\obj\Debug\net7.0\MyProject.genruntimeconfig.cache
 C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\obj\Debug\net7.0\ref\MyProject.dll
+C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\bin\Debug\net7.0\Infrastructure\Data\MOCK_DATA (1).json

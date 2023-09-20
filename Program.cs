@@ -3,6 +3,7 @@ using MyProject.Services.Features.Productos;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using MyProject.Infrastructure.Repositories;
 
 
 
@@ -12,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ProductoServices>();
+builder.Services.AddTransient<ProductRepository>();
 
 builder.Services.AddSingleton<ProductoServices>();
 builder.Services.AddControllers();

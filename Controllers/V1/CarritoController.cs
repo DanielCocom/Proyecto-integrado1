@@ -35,7 +35,7 @@ namespace Proyecto_webApi.Controllers.V1
                 carritos.Add(carrito);
             }
 
-            var producto = _productoServices.GetProductoByID(codigoProducto);
+            var producto = _productoServices.GetById(codigoProducto);
             if (producto == null)
             {
                 return NotFound();

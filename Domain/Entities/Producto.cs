@@ -9,9 +9,6 @@ namespace MyProject.Domain.Entities
         public string? Nombre { get; set; }
         [Required] // Corregir aquí
         public double Precio { get; set; }
-        [Required] // Corregir aquí
-        public int Stock { get; set; }
-
-
+        
     }
 }

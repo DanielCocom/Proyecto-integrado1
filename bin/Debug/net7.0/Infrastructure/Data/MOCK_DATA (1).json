@@ -1,0 +1,52 @@
+[
+    {
+        "Codigo": 1,
+        "Name": "Truffle Cups - Brown",
+        "Precio": 10
+    },
+    {
+        "Codigo": 2,
+        "Name": "Soup Campbells - Italian Wedding",
+        "Precio": 75
+    },
+    {
+        "Codigo": 3,
+        "Name": "Sachet",
+        "Precio": 94
+    },
+    {
+        "Codigo": 4,
+        "Name": "Sole - Iqf",
+        "Precio": 26
+    },
+    {
+        "Codigo": 5,
+        "Name": "Syrup - Monin - Granny Smith",
+        "Precio": 82
+    },
+    {
+        "Codigo": 6,
+        "Name": "Coffee - 10oz Cup 92961",
+        "Precio": 68
+    },
+    {
+        "Codigo": 7,
+        "Name": "Beans - Soya Bean",
+        "Precio": 81
+    },
+    {
+        "Codigo": 8,
+        "Name": "Sprouts - Brussel",
+        "Precio": 20
+    },
+    {
+        "Codigo": 9,
+        "Name": "Cake - Box Window 10x10x2.5",
+        "Precio": 40
+    },
+    {
+        "Codigo": 10,
+        "Name": "Parasol Pick Stir Stick",
+        "Precio": 20
+    }
+]

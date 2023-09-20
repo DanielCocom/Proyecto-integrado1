@@ -31,7 +31,7 @@ namespace Proyecto_webApi.Controllers.V1
         [HttpGet("{Codigo}")]
         public IActionResult GetProductoByID(int Codigo)
         {
-            var producto = _productoServices.GetProductoByID(Codigo);
+            var producto = _productoServices.GetById(Codigo);
             if (producto == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace Proyecto_webApi.Controllers.V1
             {
                 return BadRequest();
             }
-            var productoExiste = _productoServices.GetProductoByID(Codigo);
+            var productoExiste = _productoServices.GetById(Codigo);
             if (productoExiste == null)
             {
                 return NotFound();
@@ -65,7 +65,7 @@ namespace Proyecto_webApi.Controllers.V1
         [HttpDelete("{Codigo}")]
         public IActionResult Delete(int Codigo)
         {
-            var producto = _productoServices.GetProductoByID(Codigo);
+            var producto = _productoServices.GetById(Codigo);
             if (producto == null)
             {
                 return NotFound();
