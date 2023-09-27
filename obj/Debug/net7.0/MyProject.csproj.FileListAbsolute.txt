@@ -234,3 +234,14 @@ C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\Infrastruct
 C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\bin\Debug\net7.0\Infrastructure\Data\mycarrito.json
 C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\bin\Debug\net7.0\Infrastructure\Data\myproducts.json
 C:\Users\julia\OneDrive\Documentos\GitHub\Proyecto-integrado1\bin\Debug\net7.0\Infrastructure\Data\myusers.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\Infrastructure\Data\myusers.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\web.config
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\Infrastructure\Data\mycarrito.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\Infrastructure\Data\myproducts.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\Infrastructure\Data\myusers.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\MyProject.deps.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\bin\Debug\net7.0\publish\MyProject.runtimeconfig.json

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyProject.Domain.Entities;
 using MyProject.Services.Features.Productos;
+using MyProject.Domain.Dtos;
+using AutoMapper;
 
 
 
@@ -15,17 +17,21 @@ namespace Proyecto_webApi.Controllers.V1
     public class ProductController : ControllerBase
     {
         private readonly ProductoServices _productoServices;
+        private readonly IMapper _mapper;
 
-        public ProductController(ProductoServices productoServices)
+        public ProductController(ProductoServices productoServices, IMapper mapper)
         {
             _productoServices = productoServices;
+            _mapper = mapper;
         }
         
 
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(_productoServices.GetAll());
+            var producto = _productoServices.GetAll();
+            var productoDTO = _mapper.Map<IEnumerable<ProductoDto>>(producto);
+            return Ok (productoDTO);
         }
 
         [HttpGet("{Codigo}")]

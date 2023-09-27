@@ -46,9 +46,7 @@ namespace MyProject.Infrastructure.Repositories.c{
         }
         private int GenerateNewCarritoId()
         {
-            // Implementa lógica para generar un nuevo ID único
-            // Esto podría ser una secuencia numérica única o cualquier otro enfoque que prefieras.
-            // Por simplicidad, aquí se usa el valor máximo existente + 1.
+           
             return _carrito.Count > 0 ? _carrito.Max(c => c.Codigo) + 1 : 1;
         }
          public void SaveChanges()

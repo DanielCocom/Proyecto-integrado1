@@ -1,0 +1,17 @@
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\MyProject.exe
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\appsettings.Development.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\appsettings.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Infrastructure\Data\mycarrito.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Infrastructure\Data\myproducts.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Infrastructure\Data\myusers.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\MyProject.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\MyProject.deps.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\MyProject.runtimeconfig.json
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\MyProject.pdb
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\AutoMapper.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Microsoft.OpenApi.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\danie\Documents\GitHub\Proyecto-integrado1\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
